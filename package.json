@@ -1,0 +1,56 @@
+{
+  "name": "sharpbot",
+  "version": "0.0.8",
+  "description": "A Discord.js selfbot written by Rayzr - 60 second installation!",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "./bin/sharpbot",
+    "background": "screen -dmS sharpbot ./bin/sharpbot",
+    "config": "./bin/sharpbot --config",
+    "debug": "./bin/sharpbot --debug",
+    "lint": "eslint src",
+    "dev": "nodemon -w src bin/sharpbot",
+    "precommit": "yarn lint"
+  },
+  "bin": {
+    "sharpbot": "./bin/sharpbot"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "yarn": ">=1.0.0"
+  },
+  "author": "Rayzr522 <rayzr522@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "common-tags": "^1.7.2",
+    "country-data": "^0.0.31",
+    "dateformat": "^3.0.3",
+    "didyoumean2": "^1.2.0",
+    "discord-emoji": "^1.1.1",
+    "discord.js": "^11.3.2",
+    "env-paths": "^1.0.0",
+    "figlet": "^1.2.0",
+    "fs-extra": "^6.0.1",
+    "google-translate-api": "^2.3.0",
+    "got": "^8.3.1",
+    "inquirer": "^5.2.0",
+    "math-expression-evaluator": "^1.2.16",
+    "meow": "^5.0.0",
+    "node-notifier": "^5.2.1",
+    "normalize-url": "^2.0.1",
+    "opn": "^5.3.0",
+    "path": "^0.12.7",
+    "readdir-recursive": "^0.0.4",
+    "roll": "^1.2.0",
+    "spotify-uri": "^1.0.0",
+    "spotify-web-api-node": "^3.1.1",
+    "webdict": "^0.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "husky": "^0.14.3",
+    "nodemon": "^1.17.4"
+  }
+}
